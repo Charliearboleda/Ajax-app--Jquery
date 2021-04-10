@@ -1,6 +1,40 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
 body {
-background-image: url('https://wallpaperaccess.com/full/284500.jpg');
-background-size: cover;
-background-repeat: no-repeat;
-object-fit: contain;
+  background-color: lightblue;
+}
+
+#container {
+  border: 5px solid black;
+  margin: 0px auto;
+  width: 1470px;
+}
+
+#topbar {
+  background-color: red;
+  height: 100px;
+  text-align: center;
+  
+}
+
+#leftbar {
+  background-color: blue;
+  height: 300px;
+  width: 180px;
+  float: left;
+}
+
+#mainbar {
+  background-color: pink;
+  height: 500px;
+text-align: center;
+}
+footer {
+  background-color:  orange;
+  height: 300px;
+}
+.button {
+ width: 130px;
 }
