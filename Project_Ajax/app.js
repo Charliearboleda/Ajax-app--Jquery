@@ -9,6 +9,12 @@ $(()=>{
 let randomQuotes = quotes[Math.floor(Math.random()* quotes.length)]
 console.log(randomQuotes)
 
+$('.button').on('click', ()=>{
+let $mainsection = $('#mainbar')
+let $newqoute = $('<h4>').text(randomQuotes)
+$mainsection.append($newqoute)
+
+})
 
     $.ajax({
          url: 'https://api.thecatapi.com/v1/images/search'
