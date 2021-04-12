@@ -13,7 +13,7 @@ const randomQuotes = () => {
   $mainsection.append($newqoute)
 }
 $('.button1').on('click', ()=>{
-window.open()
+window.open('https://my.omh.ny.gov/bi/pd/saw.dll?PortalPages&PortalPath=/shared/Mental%20Health%20Program%20Directory/_portal/Mental%20Health%20Program%20Directory&page=Full%20Directory&Action=Navigate')
 
 
 
