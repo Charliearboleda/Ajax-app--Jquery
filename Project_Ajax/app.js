@@ -12,7 +12,12 @@ const randomQuotes = () => {
   let $newqoute = $('<h4>').text(quoterandom)
   $mainsection.append($newqoute)
 }
+$('.button1').on('click', ()=>{
+window.open()
 
+
+
+})
 
 $('.button').on('click', ()=>{
 randomQuotes()

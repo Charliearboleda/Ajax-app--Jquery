@@ -7,7 +7,7 @@ body {
 }
 
 #container {
-  border: 5px solid black;
+
   margin: 0px auto;
 
   display: flex;
@@ -15,9 +15,9 @@ body {
 }
 
 #topbar {
-  background-color: red;
+display: flex;
+justify-content: center;
   height: 100px;
-  text-align: center;
 
 }
 #leftmainbar {
@@ -26,28 +26,28 @@ display: flex;
 
 }
 #leftbar {
-  background-color: blue;
+
   height: 500px;
   width: 180px;
 
 }
 
 #mainbar {
-  background-color: pink;
+
   height: 500px;
 text-align: center;
+width: 1800px;
+
 }
-footer {
-  background-color:  orange;
-  height: 300px;
-}
+
 .button {
  width: 130px;
+ height: 130px;
 }
 .catimage {
 border: 3px solid black;
 max-height:200px !important;
-background-color: red;
+
 
 
 }
