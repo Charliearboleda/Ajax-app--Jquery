@@ -9,21 +9,27 @@ body {
 #container {
   border: 5px solid black;
   margin: 0px auto;
-  width: 1470px;
+
+  display: flex;
+  flex-direction: column;
 }
 
 #topbar {
   background-color: red;
   height: 100px;
   text-align: center;
-  
-}
 
+}
+#leftmainbar {
+display: flex;
+
+
+}
 #leftbar {
   background-color: blue;
-  height: 300px;
+  height: 500px;
   width: 180px;
-  float: left;
+
 }
 
 #mainbar {
@@ -37,4 +43,11 @@ footer {
 }
 .button {
  width: 130px;
+}
+.catimage {
+border: 3px solid black;
+max-height:200px !important;
+background-color: red;
+
+
 }

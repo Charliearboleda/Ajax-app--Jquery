@@ -6,21 +6,28 @@ const quotes = [`All our dreams can come true, if we have the courage to pursue 
 $(()=>{
 
 
-let randomQuotes = quotes[Math.floor(Math.random()* quotes.length)]
-console.log(randomQuotes)
+const randomQuotes = () => {
+  let quoterandom = quotes[Math.floor(Math.random()* quotes.length)]
+  let $mainsection = $('#mainbar')
+  let $newqoute = $('<h4>').text(quoterandom)
+  $mainsection.append($newqoute)
+}
+
 
 $('.button').on('click', ()=>{
-let $mainsection = $('#mainbar')
-let $newqoute = $('<h4>').text(randomQuotes)
-$mainsection.append($newqoute)
+randomQuotes()
+randomImageGen()
 
+
+// window.location.reload()
 })
-
+const randomImageGen = () => {
     $.ajax({
          url: 'https://api.thecatapi.com/v1/images/search'
      }).then(
          (data)=>{
-
+           let $newImg = $('<img>').attr('src', data[0].url).addClass('catimage')
+            $('#mainbar').append($newImg).addClass('picture')
 
          },
          ()=>{
@@ -28,6 +35,7 @@ $mainsection.append($newqoute)
          }
      );
 
+}
 
 
 
