@@ -14,9 +14,12 @@ body {
   flex-direction: column;
 }
 
+
+
 #topbar {
 display: flex;
 justify-content: center;
+margin-left: 140px;
   height: 100px;
   text-shadow: 3px 3px black;
   color: white;
