@@ -49,7 +49,7 @@ randomImageGen()
 })
 const randomImageGen = () => {
     $.ajax({
-         url: 'http://api.thecatapi.com/v1/images/search'
+         url: 'https://api.thecatapi.com/v1/images/search'
      }).then(
          (data)=>{
            let $newImg = $('<img>').attr('src', data[0].url).addClass('catimage')
