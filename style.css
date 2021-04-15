@@ -3,7 +3,10 @@
   padding: 0px;
 }
 body {
-  background-color: gray;
+  background-image: url(https://images.fineartamerica.com/images-medium-large-5/1-sky-background-at-sunset-clouds-vivid-moreiso.jpg);
+  background-size:cover;
+  background-attachment: fixed;
+
 }
 
 #container {
@@ -12,6 +15,18 @@ body {
 
   display: flex;
   flex-direction: column;
+}
+
+.linkedin:hover  {
+  box-shadow: inset 100px 0 0 0 black;
+}
+
+.google:hover  {
+  box-shadow: inset 100px 0 0 0 black;
+}
+
+.github:hover  {
+  box-shadow: inset 100px 0 0 0 black;
 }
 
 
@@ -23,7 +38,7 @@ margin-left: 140px;
   height: 100px;
   text-shadow: 3px 3px black;
   color: white;
-  background-color: gray;
+
   margin-top: 100px;
 
 
@@ -39,15 +54,18 @@ text-shadow: 3px 3px black;
   height: 500px;
   width: 180px;
   /* border: 5px solid white; */
-  background-color: gray;
+
 
 }
 
 #mainbar {
-background-color: gray;
+
   height: 500px;
 text-align: center;
 width: 1800px;
+text-shadow: 3px 3px black;
+color: white;
+
 
 }
 
@@ -97,7 +115,7 @@ max-height:200px !important;
 
 }
 
-h4{
+h2{
 color: white;
 text-shadow: 2px 2px black;
 
@@ -106,4 +124,12 @@ text-shadow: 2px 2px black;
 .button1 {
   width: 130px;
 
+}
+
+.button:hover  {
+  box-shadow: inset 200px 0 0 0 black;
+}
+
+#modalbutton:hover  {
+  box-shadow: inset 130px 0 0 0 black;
 }

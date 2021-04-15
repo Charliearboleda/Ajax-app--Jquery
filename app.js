@@ -30,7 +30,7 @@ $close.on('click', closemodal)
 const randomQuotes = () => {
   let quoterandom = quotes[Math.floor(Math.random()* quotes.length)]
   let $mainsection = $('.results')
-  let $newqoute = $('<h4>').text(quoterandom)
+  let $newqoute = $('<h2>').text(quoterandom)
   $mainsection.prepend($newqoute)
 }
 $('.button1').on('click', ()=>{
@@ -38,6 +38,16 @@ window.open('https://www.samhsa.gov/data/report/2019-national-directory-mental-h
 
 })
 
+$('.linkedin').on('click', ()=>{
+  window.open('https://www.linkedin.com/in/charlie-arboleda-216967203/')
+})
+
+$('.google').on('click', ()=>{
+  window.open('https://www.google.com')
+})
+$('.github').on('click', ()=>{
+  window.open('https://github.com/Charliearboleda/Ajax-app--Jquery')
+})
 
 
 $('.button').on('click', ()=>{
